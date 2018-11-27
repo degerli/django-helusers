@@ -4,6 +4,13 @@
 
 # Django app for City of Helsinki user infrastructure
 
+django-helusers is a Django app providing for user management as used in City of Helsinki projects. It provides:
+* federated login using [python-social-auth](https://github.com/python-social-auth/social-app-django), connecting to our OIDC-based SSO, Tunnistamo
+* handling of JWT token authentication for Django Rest Framework based APIs
+* Shared user adding UUID and AD groups to the django model
+* login and logout views for server side UIs (admin mostly)
+
+
 ## Installation
 
 First, install the pip package.
